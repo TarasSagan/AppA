@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">App A BIGDIG</string>
+    <string name="title_test">Test</string>
+    <string name="title_history">History</string>
+    <string name="title_test_ok">Ok</string>
+    <string name="title_test_image_address">Image address</string>
+    <string name="history_is_empty">The historyDBModel is empty</string>
+
+    <string name="intent_filter_key_pkg">com.bigdig.appbbigdig</string>
+    <string name="intent_filter_key_cls">com.bigdig.appbbigdig.imageActivity.ImageActivity</string>
+    <string name="intent_filter_key_url">INTENT_URL</string>
+    <string name="intent_filter_key_state">INTENT_STATE</string>
+    <string name="intent_filter_key_bundle">Bundle</string>
+    <string name="intent_filter_key_ID">_ID</string>
+    <string name="need_app_b">You need to install the app b</string>
+
+
+    <string name="history_sort">Sort</string>
+    <string name="history_sort_latest">Latest</string>
+    <string name="history_sort_oldest">Oldest</string>
+    <string name="history_sort_state_success_top">Success top</string>
+    <string name="history_sort_state_success_bottom">Success bottom</string>
+
+
+    <string name="intent_filter_url_key">INTENT</string>
+
+</resources>

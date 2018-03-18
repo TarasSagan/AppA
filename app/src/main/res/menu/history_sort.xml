@@ -1,0 +1,34 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/history_sort"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:title="@string/history_sort_latest"
+                android:id="@+id/menu_sort_latest"
+                app:showAsAction="never"/>
+            <item
+                android:title="@string/history_sort_oldest"
+                android:id="@+id/menu_sort_oldest"
+                app:showAsAction="never"/>
+            <item
+                android:title="@string/history_sort_state_success_top"
+                android:id="@+id/menu_sort_success_top"
+                app:showAsAction="never"/>
+            <item
+                android:title="@string/history_sort_state_success_bottom"
+                android:id="@+id/menu_sort_success_bottom"
+                app:showAsAction="never"/>
+        </menu>
+
+    </item>
+
+
+
+</menu>
