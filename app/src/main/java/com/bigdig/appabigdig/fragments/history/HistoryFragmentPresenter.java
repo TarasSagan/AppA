@@ -12,6 +12,7 @@ import android.support.v4.content.Loader;
 import android.util.Log;
 
 import com.bigdig.appabigdig.HistoryModel;
+import com.bigdig.appabigdig.Keys;
 import com.bigdig.appabigdig.MainActivity;
 import com.bigdig.appabigdig.R;
 import com.bigdig.appabigdig.repository.HistoryDBModel;
@@ -101,18 +102,11 @@ public class HistoryFragmentPresenter extends MvpBasePresenter<IHistoryFragmentV
 
     @Override
     public void onClick(HistoryModel item) {
-        Bundle bundle = new Bundle();
-        bundle.putString(context.getResources().getString(R.string.intent_filter_url_key), item.getUrl());
-        bundle.putLong(context.getResources().getString(R.string.intent_filter_key_ID), item.getId());
-        bundle.putInt(context.getResources().getString(R.string.intent_filter_key_state), item.getStatus());
-
-
-
         Intent intent = new Intent();
-//        intent.putExtra(context.getString(R.string.intent_filter_url_key), item.getUrl());
-//        intent.putExtra(context.getString(R.string.intent_filter_key_state), item.getStatus());
-//        intent.putExtra(context.getString(R.string.intent_filter_key_ID), Long.toString(item.getId()));
-        intent.putExtra(context.getResources().getString(R.string.intent_filter_key_bundle), bundle);
+        intent.putExtra(Keys.URL_KEY, item.getUrl());
+        intent.putExtra(Keys.STATUS_KEY, item.getStatus());
+        intent.putExtra(Keys.ID_KEY, item.getId());
+
         try {
             intent.setComponent(new ComponentName(
                     context.getString(R.string.intent_filter_key_pkg),

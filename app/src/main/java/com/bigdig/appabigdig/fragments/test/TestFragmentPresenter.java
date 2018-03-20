@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.bigdig.appabigdig.Keys;
 import com.bigdig.appabigdig.R;
 import com.hannesdorfmann.mosby3.mvp.MvpBasePresenter;
 
@@ -17,10 +18,8 @@ public class TestFragmentPresenter extends MvpBasePresenter<ITestFragmentView>{
 
     public void onShowImage(String url){
         Intent intent = new Intent();
-        Bundle bundle = new Bundle();
-        bundle.putString(context.getResources().getString(R.string.intent_filter_url_key), url);
-
-        intent.putExtra(context.getResources().getString(R.string.intent_filter_key_bundle), bundle);
+        intent.putExtra(Keys.URL_KEY, url);
+        intent.putExtra(Keys.STATUS_KEY, 0);
         try {
             intent.setComponent(new ComponentName(
                     context.getString(R.string.intent_filter_key_pkg),

@@ -8,10 +8,9 @@
 
     <string name="intent_filter_key_pkg">com.bigdig.appbbigdig</string>
     <string name="intent_filter_key_cls">com.bigdig.appbbigdig.imageActivity.ImageActivity</string>
-    <string name="intent_filter_key_url">INTENT_URL</string>
+
     <string name="intent_filter_key_state">INTENT_STATE</string>
-    <string name="intent_filter_key_bundle">Bundle</string>
-    <string name="intent_filter_key_ID">_ID</string>
+
     <string name="need_app_b">You need to install the app b</string>
 
 

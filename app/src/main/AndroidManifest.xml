@@ -2,8 +2,8 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bigdig.appabigdig">
-    <permission android:name="com.bigdig.appabigdig.repository.READ"/>
-    <permission android:name="com.bigdig.appabigdig.repository.WRITE"/>
+    <uses-permission android:name="com.bigdig.appabigdig.repository.WRITE"/>
+    <uses-permission android:name="com.bigdig.appabigdig.repository.READ"/>
 
     <application
         android:allowBackup="true"
@@ -26,6 +26,7 @@
             android:authorities="com.bigdig.appabigdig.repository"
             android:enabled="true"
             android:exported="true"
+            android:multiprocess="true"
             android:writePermission="com.bigdig.appabigdig.repository.WRITE"
             android:readPermission="com.bigdig.appabigdig.repository.READ"
             />
